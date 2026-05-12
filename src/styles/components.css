@@ -1,0 +1,97 @@
+/* Minimal styling. CSS variables let consumers override the theme. */
+:root {
+  --rc-color-bg: #ffffff;
+  --rc-color-fg: #1a1a1a;
+  --rc-color-muted: #666;
+  --rc-color-border: #e0e0e0;
+  --rc-color-primary: #2563eb;
+  --rc-color-primary-fg: #ffffff;
+  --rc-color-danger: #dc2626;
+  --rc-color-success: #16a34a;
+  --rc-radius: 6px;
+  --rc-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --rc-font: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+/* Modal */
+.rc-modal-overlay {
+  position: fixed; inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 1000;
+}
+.rc-modal {
+  background: var(--rc-color-bg); color: var(--rc-color-fg);
+  border-radius: var(--rc-radius); box-shadow: var(--rc-shadow);
+  font-family: var(--rc-font);
+  padding: 1.5rem; min-width: 320px; max-width: 90vw; max-height: 90vh;
+  overflow: auto;
+}
+.rc-modal h2 { margin: 0 0 0.5rem; font-size: 1.125rem; }
+
+/* DataTable */
+.rc-table { width: 100%; border-collapse: collapse; font-family: var(--rc-font); }
+.rc-table th, .rc-table td { padding: 0.5rem 0.75rem; text-align: left; border-bottom: 1px solid var(--rc-color-border); }
+.rc-table th { font-weight: 600; cursor: pointer; user-select: none; }
+.rc-table th[aria-sort="ascending"]::after { content: " ▲"; }
+.rc-table th[aria-sort="descending"]::after { content: " ▼"; }
+
+/* FormBuilder */
+.rc-form { font-family: var(--rc-font); display: grid; gap: 0.75rem; }
+.rc-form label { display: grid; gap: 0.25rem; font-size: 0.875rem; }
+.rc-form input, .rc-form select, .rc-form textarea {
+  padding: 0.5rem; border: 1px solid var(--rc-color-border); border-radius: var(--rc-radius);
+  font: inherit;
+}
+.rc-form .rc-form-error { color: var(--rc-color-danger); font-size: 0.8125rem; }
+
+/* Toast */
+.rc-toast-region { position: fixed; bottom: 1rem; right: 1rem; display: flex; flex-direction: column; gap: 0.5rem; z-index: 1100; }
+.rc-toast {
+  background: var(--rc-color-fg); color: var(--rc-color-primary-fg);
+  padding: 0.75rem 1rem; border-radius: var(--rc-radius);
+  font-family: var(--rc-font); min-width: 200px;
+}
+.rc-toast-info { background: #1f2937; }
+.rc-toast-success { background: var(--rc-color-success); }
+.rc-toast-error { background: var(--rc-color-danger); }
+
+/* Dropdown */
+.rc-dropdown { position: relative; display: inline-block; font-family: var(--rc-font); }
+.rc-dropdown-trigger {
+  padding: 0.5rem 0.75rem; border: 1px solid var(--rc-color-border); border-radius: var(--rc-radius);
+  background: var(--rc-color-bg); cursor: pointer;
+}
+.rc-dropdown-menu {
+  position: absolute; top: 100%; left: 0; margin-top: 0.25rem;
+  background: var(--rc-color-bg); border: 1px solid var(--rc-color-border);
+  border-radius: var(--rc-radius); box-shadow: var(--rc-shadow); min-width: 160px;
+  list-style: none; padding: 0.25rem 0; margin-bottom: 0;
+}
+.rc-dropdown-menu li { padding: 0.5rem 0.75rem; cursor: pointer; }
+.rc-dropdown-menu li:hover, .rc-dropdown-menu li[aria-selected="true"] {
+  background: var(--rc-color-border);
+}
+
+/* Pagination */
+.rc-pagination { display: inline-flex; gap: 0.25rem; font-family: var(--rc-font); }
+.rc-pagination button {
+  padding: 0.375rem 0.625rem; border: 1px solid var(--rc-color-border);
+  background: var(--rc-color-bg); cursor: pointer; border-radius: var(--rc-radius);
+}
+.rc-pagination button[aria-current="page"] {
+  background: var(--rc-color-primary); color: var(--rc-color-primary-fg); border-color: var(--rc-color-primary);
+}
+.rc-pagination button:disabled { opacity: 0.5; cursor: not-allowed; }
+
+/* Tabs */
+.rc-tabs { font-family: var(--rc-font); }
+.rc-tabs-list { display: flex; gap: 0.25rem; border-bottom: 1px solid var(--rc-color-border); }
+.rc-tabs-tab {
+  padding: 0.5rem 0.875rem; background: none; border: none;
+  border-bottom: 2px solid transparent; cursor: pointer; font: inherit;
+}
+.rc-tabs-tab[aria-selected="true"] {
+  border-bottom-color: var(--rc-color-primary); color: var(--rc-color-primary);
+}
+.rc-tabs-panel { padding: 0.75rem 0; }

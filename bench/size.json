@@ -1,0 +1,165 @@
+{
+  "totals": {
+    "raw_bytes": 110092,
+    "raw_kb": 107.51,
+    "gzipped_bytes": 36002,
+    "gzipped_kb": 35.16
+  },
+  "files": [
+    {
+      "file": "index.js.map",
+      "raw_bytes": 38947,
+      "gzipped_bytes": 11598
+    },
+    {
+      "file": "index.umd.cjs.map",
+      "raw_bytes": 37271,
+      "gzipped_bytes": 11296
+    },
+    {
+      "file": "index.js",
+      "raw_bytes": 14642,
+      "gzipped_bytes": 4537
+    },
+    {
+      "file": "index.umd.cjs",
+      "raw_bytes": 9985,
+      "gzipped_bytes": 3963
+    },
+    {
+      "file": "components.css",
+      "raw_bytes": 3387,
+      "gzipped_bytes": 1070
+    },
+    {
+      "file": "src/components/FormBuilder/FormBuilder.d.ts",
+      "raw_bytes": 1249,
+      "gzipped_bytes": 521
+    },
+    {
+      "file": "src/components/DataTable/DataTable.d.ts",
+      "raw_bytes": 846,
+      "gzipped_bytes": 461
+    },
+    {
+      "file": "src/components/Toast/Toast.d.ts",
+      "raw_bytes": 599,
+      "gzipped_bytes": 312
+    },
+    {
+      "file": "src/components/Modal/Modal.d.ts",
+      "raw_bytes": 578,
+      "gzipped_bytes": 319
+    },
+    {
+      "file": "src/components/Pagination/Pagination.d.ts",
+      "raw_bytes": 539,
+      "gzipped_bytes": 298
+    },
+    {
+      "file": "src/components/Dropdown/Dropdown.d.ts",
+      "raw_bytes": 457,
+      "gzipped_bytes": 246
+    },
+    {
+      "file": "src/components/Tabs/Tabs.d.ts",
+      "raw_bytes": 452,
+      "gzipped_bytes": 261
+    },
+    {
+      "file": "src/index.d.ts",
+      "raw_bytes": 320,
+      "gzipped_bytes": 140
+    },
+    {
+      "file": "src/lib/useFocusTrap.d.ts",
+      "raw_bytes": 134,
+      "gzipped_bytes": 135
+    },
+    {
+      "file": "src/components/Toast/index.d.ts",
+      "raw_bytes": 120,
+      "gzipped_bytes": 91
+    },
+    {
+      "file": "src/components/DataTable/index.d.ts",
+      "raw_bytes": 84,
+      "gzipped_bytes": 74
+    },
+    {
+      "file": "src/components/FormBuilder/index.d.ts",
+      "raw_bytes": 84,
+      "gzipped_bytes": 80
+    },
+    {
+      "file": "src/components/Pagination/index.d.ts",
+      "raw_bytes": 82,
+      "gzipped_bytes": 77
+    },
+    {
+      "file": "src/components/Dropdown/index.d.ts",
+      "raw_bytes": 80,
+      "gzipped_bytes": 72
+    },
+    {
+      "file": "src/components/Tabs/index.d.ts",
+      "raw_bytes": 60,
+      "gzipped_bytes": 67
+    },
+    {
+      "file": "src/components/Modal/index.d.ts",
+      "raw_bytes": 50,
+      "gzipped_bytes": 62
+    },
+    {
+      "file": "index.d.ts",
+      "raw_bytes": 38,
+      "gzipped_bytes": 54
+    },
+    {
+      "file": "src/demo.d.ts",
+      "raw_bytes": 11,
+      "gzipped_bytes": 31
+    },
+    {
+      "file": "tests/DataTable.test.d.ts",
+      "raw_bytes": 11,
+      "gzipped_bytes": 31
+    },
+    {
+      "file": "tests/Dropdown.test.d.ts",
+      "raw_bytes": 11,
+      "gzipped_bytes": 31
+    },
+    {
+      "file": "tests/FormBuilder.test.d.ts",
+      "raw_bytes": 11,
+      "gzipped_bytes": 31
+    },
+    {
+      "file": "tests/Modal.test.d.ts",
+      "raw_bytes": 11,
+      "gzipped_bytes": 31
+    },
+    {
+      "file": "tests/Pagination.test.d.ts",
+      "raw_bytes": 11,
+      "gzipped_bytes": 31
+    },
+    {
+      "file": "tests/Tabs.test.d.ts",
+      "raw_bytes": 11,
+      "gzipped_bytes": 31
+    },
+    {
+      "file": "tests/Toast.test.d.ts",
+      "raw_bytes": 11,
+      "gzipped_bytes": 31
+    },
+    {
+      "file": "tests/setup.d.ts",
+      "raw_bytes": 0,
+      "gzipped_bytes": 20
+    }
+  ]
+}

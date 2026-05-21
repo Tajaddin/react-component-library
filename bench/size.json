@@ -1,20 +1,20 @@
 {
   "totals": {
-    "raw_bytes": 110092,
-    "raw_kb": 107.51,
-    "gzipped_bytes": 36002,
-    "gzipped_kb": 35.16
+    "raw_bytes": 113120,
+    "raw_kb": 110.47,
+    "gzipped_bytes": 36121,
+    "gzipped_kb": 35.27
   },
   "files": [
     {
       "file": "index.js.map",
-      "raw_bytes": 38947,
-      "gzipped_bytes": 11598
+      "raw_bytes": 40461,
+      "gzipped_bytes": 11657
     },
     {
       "file": "index.umd.cjs.map",
-      "raw_bytes": 37271,
-      "gzipped_bytes": 11296
+      "raw_bytes": 38785,
+      "gzipped_bytes": 11356
     },
     {
       "file": "index.js",

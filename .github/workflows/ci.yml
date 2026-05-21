@@ -1,0 +1,38 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - name: Test (incl. jest-axe a11y)
+        run: npm test
+      - name: Build (tsc + vite library mode)
+        run: npm run build
+      - name: Bundle-size report
+        run: npm run bench:size
+
+  publish-dryrun:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - run: npm run build
+      - name: npm pack (verify publishable artifact)
+        run: npm pack --dry-run
